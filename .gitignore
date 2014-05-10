@@ -9,3 +9,6 @@
 /vendor/
 /bin/
 /composer.phar
+.buildpath
+.project
+.settings/org.eclipse.php.core.prefs
