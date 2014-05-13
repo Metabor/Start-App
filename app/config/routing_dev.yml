@@ -1,3 +1,7 @@
+_welcome:
+    pattern:   /
+    defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }
+
 _wdt:
     resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
     prefix:   /_wdt
@@ -12,3 +16,6 @@ _configurator:
 
 _main:
     resource: routing.yml
+
+MopaBootstrapSandbox:
+    resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"

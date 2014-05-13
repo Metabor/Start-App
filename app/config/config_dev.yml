@@ -1,5 +1,7 @@
 imports:
     - { resource: config.yml }
+    - { resource: @MopaBootstrapSandboxBundle/Resources/config/themes.yml }
+    - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_menu.yml }
 
 framework:
     router:
@@ -31,6 +33,11 @@ monolog:
 
 assetic:
     use_controller: %use_assetic_controller%
+
+services:
+    twig.extension.debug:
+        class: Twig_Extension_Debug
+        tags: [{ name: 'twig.extension' }]
 
 #swiftmailer:
 #    delivery_address: me@example.com
